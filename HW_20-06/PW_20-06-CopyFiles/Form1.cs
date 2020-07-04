@@ -6,8 +6,10 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Threading;
 
 namespace PW_20_06_CopyFiles
 {
@@ -51,7 +53,18 @@ namespace PW_20_06_CopyFiles
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            Thread p = new Thread(new ThreadStart(newThread));
+            p.Start();
+        }
+
+        private void newThread()
+        {
+
+            for (int i = 0; i < 5; i++)
+            {
+                ThreadPriority prior = (ThreadPriority)i;
+                Thread.Sleep(500);
+            }
         }
     }
 }
