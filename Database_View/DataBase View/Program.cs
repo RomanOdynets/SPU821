@@ -10,7 +10,7 @@ namespace DataBase_View
     static class Program
     {
         public static Connection db;
-        private static IniFile ini = new IniFile("settings.ini");
+        public static IniFile ini = new IniFile("settings.ini");
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>

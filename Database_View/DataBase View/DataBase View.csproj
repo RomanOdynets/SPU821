@@ -53,11 +53,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Additional\AddColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Additional\AddColumn.Designer.cs">
+      <DependentUpon>AddColumn.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Auth.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Auth.Designer.cs">
       <DependentUpon>Auth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CreateTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\CreateTable.Designer.cs">
+      <DependentUpon>CreateTable.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\MainView.cs">
       <SubType>Form</SubType>
@@ -70,8 +82,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Additional\AddColumn.resx">
+      <DependentUpon>AddColumn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Auth.resx">
       <DependentUpon>Auth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\CreateTable.resx">
+      <DependentUpon>CreateTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
